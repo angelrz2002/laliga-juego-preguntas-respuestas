@@ -1,0 +1,22 @@
+# Entornos virtuales locales
+laliga-trivia-backend/.venv/
+
+# Dependencias de Node locales
+laliga-trivia-frontend/node_modules/
+
+# Builds locales
+laliga-trivia-frontend/dist/
+
+# Temporales de Python y tests
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# Logs físicos (manteniendo .gitkeep intacto)
+laliga-trivia-backend/logs/*.log
+
+# IDEs y temporales del sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
