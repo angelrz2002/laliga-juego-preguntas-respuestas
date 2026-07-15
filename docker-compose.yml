@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./laliga-trivia-backend
+      dockerfile: Dockerfile
+    container_name: laliga-trivia-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./laliga-trivia-backend/logs:/app/logs
+    restart: always
+
+  frontend:
+    build:
+      context: ./laliga-trivia-frontend
+      dockerfile: Dockerfile
+    container_name: laliga-trivia-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
