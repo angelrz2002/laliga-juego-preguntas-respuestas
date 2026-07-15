@@ -100,7 +100,7 @@ Tanto en **macOS / Linux** (usando la herramienta estándar `make`) como en **Wi
 * **Apagar el entorno:** `make down`  (o `.\make down` en PowerShell)
 
 Una vez levantados los servicios:
-* **Frontend:** Accesible directamente en `http://localhost` (puerto `80` por defecto, con redirección interna de `/api` mediante Nginx proxy).
+* **Frontend:** Accesible en `http://localhost:8080` (con redirección interna de `/api` mediante Nginx proxy).
 * **Backend y Docs:** La documentación de la API e interfaz interactiva de Swagger están accesibles en `http://localhost:8000/docs`.
 
 ---
