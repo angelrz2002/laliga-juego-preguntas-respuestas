@@ -85,11 +85,11 @@ Para facilitar la evaluación del proyecto en cualquier sistema operativo, se ha
 
 ### Uso Directo de Docker Compose (Alternativa manual):
 Si prefieres ejecutar los comandos de Docker de forma directa:
-* **Levantar todo el proyecto:** `docker-compose up -d --build`
-* **Levantar/Actualizar solo el Frontend:** `docker-compose up -d --build frontend`
-* **Levantar/Actualizar solo el Backend:** `docker-compose up -d --build backend`
-* **Ejecutar pruebas unitarias:** `docker-compose run --rm backend pytest`
-* **Apagar el entorno (y limpiar volúmenes):** `docker-compose down -v`
+* **Levantar todo el proyecto:** `docker compose up -d --build`
+* **Levantar/Actualizar solo el Frontend:** `docker compose up -d --build frontend`
+* **Levantar/Actualizar solo el Backend:** `docker compose up -d --build backend`
+* **Ejecutar pruebas unitarias:** `docker compose run --rm backend pytest`
+* **Apagar el entorno (y limpiar volúmenes):** `docker compose down -v`
 
 ### Ejecución rápida con comandos `make`:
 Tanto en **macOS / Linux** (usando la herramienta estándar `make`) como en **Windows** (gracias a un script `make.bat` automatizado en la raíz del proyecto), puedes ejecutar:

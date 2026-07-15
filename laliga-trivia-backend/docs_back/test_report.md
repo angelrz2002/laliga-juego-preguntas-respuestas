@@ -7,7 +7,7 @@ Este reporte documenta los criterios de calidad y los resultados de las pruebas 
 ## 1. Entorno de Ejecución de Pruebas
 Para garantizar que las pruebas se ejecutan en un entorno idéntico al de producción, la suite completa se dockeriza y corre aislada dentro del contenedor del backend usando cualquiera de los siguientes comandos:
 ```bash
-docker-compose run --rm backend pytest 
+docker compose run --rm backend pytest 
 # O bien usando el comando de automatización:
 make test
 ```
