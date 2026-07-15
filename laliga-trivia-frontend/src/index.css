@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-laliga-dark text-slate-100 antialiased overflow-x-hidden;
+  }
+}
+
+/* Estilo de tarjeta simple y plano */
+.cyber-card {
+  background-color: #151D30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-hover {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-hover:hover:not(:disabled) {
+  border-color: rgba(0, 255, 135, 0.4);
+  transform: translateY(-2px);
+}
+
+
